@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="practica-php-David" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del alumno</title>
+    <link rel="stylesheet" href="formulario-alumnos.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="cabecera">
+            <img src="https://www.somorrostro.com/wp-content/uploads/2023/06/logo.png" alt="Centro de Formación Somorrostro">
+        </header>
+
+        <form action="procesar-alumno.php" method="post" class="alumno-form">
+            <h2>Datos del alumno</h2>
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" minlength="2" pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñÀ-ÿ' -]+" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" minlength="2" pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñÀ-ÿ' -]+" required>
+            </div>
+
+            <div class="campo">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="campo">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="1º ESO">1º ESO</option>
+                    <option value="2º ESO">2º ESO</option>
+                    <option value="3º ESO">3º ESO</option>
+                    <option value="4º ESO">4º ESO</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="email_educamos">Email Educamos:</label>
+                <input type="email" id="email_educamos" name="email_educamos" required>
+            </div>
+
+            <div class="campo">
+                <label for="password_educamos">Contraseña Educamos:</label>
+                <input type="password" id="password_educamos" name="password_educamos" minlength="8" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>
