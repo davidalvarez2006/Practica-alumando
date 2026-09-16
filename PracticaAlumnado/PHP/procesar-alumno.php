@@ -106,7 +106,7 @@ $sql_insert = "INSERT INTO alumnos (nombre, apellidos, fecha_nacimiento, curso, 
 					</table>
 				</div>
 				<!-- Enlace para volver al formulario inicial -->
-				<a class="volver-formulario" href="formulario-alumnos.html">Volver al formulario</a>
+				<a class="volver-formulario" href="../formulario-alumnos.html">Volver al formulario</a>
 			</div>
 		</div>
 	</div>
